@@ -6,14 +6,20 @@ def nombres_journalists
 end
 
 def nombres_handele_avec_numero
-    puts @journalists.data
+    puts @journalists.count  { |x,| x[/\d+/]}
+end
+
+def combien_de_aude
+     puts @journalists.count {aude}
+
 end
 
 
 
 
 def perform
-    #nombres_journalists
+    nombres_journalists
     nombres_handele_avec_numero
+    combien_de_aude
 end
 perform
